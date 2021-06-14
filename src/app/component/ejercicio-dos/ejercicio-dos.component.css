@@ -1,0 +1,9 @@
+.seleccionColor{
+    background-color: cornflowerblue;
+}
+.anterior{
+    color: white;
+    background-color: darkcyan;
+    position: absolute;
+    left: 9px;
+}

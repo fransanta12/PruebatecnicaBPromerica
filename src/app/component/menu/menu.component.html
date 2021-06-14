@@ -1,0 +1,13 @@
+<p>
+    <mat-toolbar>
+    <button  mat-button [matMenuTriggerFor]="menu" class="button-right menu-color" style="margin-bottom: 4px;">
+        <mat-icon>menu</mat-icon>
+    </button>
+    <mat-menu #menu="matMenu">
+      <button mat-menu-item routerLink="{{item.ruta}}" *ngFor="let item of itemMenu; index as i;" >{{item.titulo}}</button>
+    </mat-menu>
+    <span>Prueba Banco Promerica</span>
+    <span class="example-spacer"></span>
+    <img src="../assets/img/promerica_cr_155x90png.png" style="width: 100px;height: 80px; margin-left: auto;">
+  </mat-toolbar>
+</p>

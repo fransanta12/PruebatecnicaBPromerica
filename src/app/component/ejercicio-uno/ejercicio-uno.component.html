@@ -1,0 +1,49 @@
+<div style="background-color: cornsilk;padding: auto;">
+  <mat-card>
+    <mat-card-title >
+      <h2 style="text-align: center;padding-top: 15px;">Respuestas de ejercicio 1</h2>
+    </mat-card-title>
+    <mat-card-content>
+      <mat-accordion>
+        <!-- 2.1 -->
+        <mat-expansion-panel (opened)="panelOpenState"
+                             (closed)="!panelOpenState" color="primary"  style="background: #fff;">
+          <mat-expansion-panel-header>
+            <mat-panel-title style="font-family: museosans,Tahoma;font-size: 16px;">
+              
+            </mat-panel-title>
+            <mat-panel-description style="font-family: museosans,Tahoma;font-size: 16px;">
+              ¿Cómo multiplicarías 2 números sin utilizar el signo de multiplicación?
+            </mat-panel-description>
+          </mat-expansion-panel-header>
+          <cite>Indicaciones: Ingresa los valores y presiona =</cite>
+          <br>
+          <br>
+          <mat-label style="margin-right: 3px;">Valor A</mat-label>
+          <input matInput type="number" class="example-right-align" min="0"
+          placeholder="0" [(ngModel)]="valorA" #ctrl="ngModel">
+          <br>
+          <br>
+          <mat-label style="margin-right: 3px;">Valor B</mat-label>
+            <input matInput type="number" class="example-right-align" min="0"
+            placeholder="0" [(ngModel)]="valorB" #ctrl="ngModel">
+          <br>
+          <br>
+            <mat-card-actions>
+              <div class="example-button-row">
+                <button mat-button color="primary" (click)="SumaRecursiva(valorA, valorB)" style="color: white;background-color: darkolivegreen;margin-right: 3px;">Multiplicar</button>
+                <br>
+                <br>
+                <b>Resultado</b>  =   {{resultado}}
+                
+              </div>
+            </mat-card-actions>
+        </mat-expansion-panel>
+        
+      </mat-accordion>
+    </mat-card-content>
+    <mat-card-footer>
+      <button mat-stroked-button color="primary" routerLink="/ejercioB" class="siguiente">Siguiente</button>
+    </mat-card-footer>
+  </mat-card>
+</div>
