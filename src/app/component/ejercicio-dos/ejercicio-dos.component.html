@@ -18,6 +18,8 @@
           </mat-expansion-panel-header>
           <cite>{{pregunta.description}}</cite>
           <div id="{{pregunta.id}}" style="margin-top: 4px;">{{pregunta.codeSnippe}}</div>
+          <br>
+          <cite *ngIf="pregunta.respuesta != '' ">{{pregunta.respuesta}}</cite>
         </mat-expansion-panel>
       </mat-accordion>
     </mat-card-content>

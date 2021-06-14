@@ -14,8 +14,8 @@ export class EjercicioDosComponent implements OnInit {
     pregunta:"Uso de Let y Const, ¿Harías cambios en las siguientes líneas? ¿Y por qué?",
     description: "var nombre = \"Ricardo Tapia\";\nvar edad = 23;\nvar PERSONAJE = {\nnombre: nombre,\nedad: edad\n};",
     id:"element21",
-    codeSnippe:"var nombre = 'Ricardo Tapia';\nvar edad = 23;\nvar PERSONAJE = {nombre: nombre,edad: edad};\nconsole.log(PERSONAJE);",
-    respuesta: ""
+    codeSnippe:"let nombre = 'Ricardo Tapia';\nlet edad = 23;\nvar PERSONAJE = {nombre: nombre,edad: edad};\nconsole.log(PERSONAJE);",
+    respuesta: "El cambio lo haría en las variables, ya que solo se usaran para construir el objeto PERSONAJE"
   },{
     title:"2.2",
     pregunta:"Cree una interfaz que sirva para validar el siguiente objeto",
@@ -82,7 +82,7 @@ export class EjercicioDosComponent implements OnInit {
     console.log(this.heroes);
     console.log(this.resultadoDoble(2,3));
     console.log(this.getAvenger("Fran"));
-    console.log("El arear del rectangulo es "+this.rectangulo.area(this.rectangulo.base,this.rectangulo.altura));
+    console.log("El área del rectángulo es "+this.rectangulo.area(this.rectangulo.base,this.rectangulo.altura));
   }
 
   resultadoDoble = ( a:number, b:number ) => (a + b) * 2;
